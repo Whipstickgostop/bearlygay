@@ -12,6 +12,14 @@ body {
   align-items: center;
 }
 
+h2 {
+  z-index: 100;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  left: 0;
+}
+
 .heart {
   min-width: 22px;
   min-height: 22px;
