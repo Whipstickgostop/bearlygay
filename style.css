@@ -39,22 +39,6 @@ body {
     transform: translateY(120vh) rotateZ(-20deg);
   }
 }
-#container {
-  background: rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(3px);
-  min-width: 60vw;
-  max-width: 90vw;
-  height: auto;
-  z-index: 2;
-  position: relative;
-  padding: 10px;
-  border: none;
-  border-radius: 10px;
-  overflow: auto;
-  font-size: 19px;
-  font-family: "Grandstander", serif;
-  text-align: center;
-}
 
 * {
   box-sizing: border-box;
