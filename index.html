@@ -1,5 +1,34 @@
 <html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+  </head>
   <body>
-    <h1>Bearly Gay</h1>
+    <div id="container">
+      <h2>Bearly Gay</h2>
+    </div>
+    
+    <script>
+      var rain = document.getElementById("rain")
+
+      function createHearts () {
+        const heart  = document.createElement("div");
+         heart.classList.add("heart","fa","fa-heart")
+        heart.style.left = Math.floor(Math.random()*100)+"vw"
+        heart.style.animationDuration = Math.floor(Math.random()*2)+2+"s"
+        document.body.appendChild(heart)
+      }
+       setInterval(createHearts,100);
+
+         var heart = document.getElementsByClassName("heart")
+       setInterval(()=>{
+         for (let i = 0; i < heart.length; i++) {
+           if (i > 30) {
+            heart[0].remove() 
+           }
+
+         }
+       },50)
+    </script>
   </body>
 </html>
