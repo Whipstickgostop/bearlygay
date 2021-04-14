@@ -1,0 +1,57 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+  background: linear-gradient(45deg, #fd9aaa, #ff39ff);
+  transition: 1s;
+  font-size: 19px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heart {
+  min-width: 22px;
+  min-height: 22px;
+  font-size: 19px;
+  color: #3f003f;
+  position: absolute;
+  top: -15vh;
+  animation: rain 3s linear 1;
+}
+
+@keyframes rain {
+  0% {
+    transform: translateY(-10vh) rotateZ(0deg);
+  }
+  25% {
+    transform: translateY(27vh) rotateZ(20deg);
+  }
+  50% {
+    transform: translateY(55vh) rotateZ(-20deg);
+  }
+  75% {
+    transform: translateY(90vh) rotateZ(20deg);
+  }
+  100% {
+    transform: translateY(120vh) rotateZ(-20deg);
+  }
+}
+#container {
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3px);
+  min-width: 60vw;
+  max-width: 90vw;
+  height: auto;
+  z-index: 2;
+  position: relative;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  overflow: auto;
+  font-size: 19px;
+  font-family: "Grandstander", serif;
+  text-align: center;
+}
